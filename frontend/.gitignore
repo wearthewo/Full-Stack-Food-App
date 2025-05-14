@@ -1,0 +1,17 @@
+# React
+node_modules/
+.env
+dist/
+build/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite
+
+# Docker
+docker-compose.override.yml
+
