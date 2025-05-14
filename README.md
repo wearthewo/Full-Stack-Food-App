@@ -1,1 +1,3 @@
-"# Full-Stack-Food-App" 
+A fully functional food App using the Mern Stack In home page we fetch foods with images stored in Cloudinary. We also use search, filters and pagination logic.User can register, login using JWT tokens and logout.  After user authentication he can click the food he want and goes to cart page. There he click the Pay with Stripe button, navigates in Stripe payment page using fake test credentials and after successful payment he redirects to our app. Finally he can see every order he made in orders page.  
+This application is running with our dependencies in backend using npm install and npm run dev and with our dependencies in frontend using npm install and run dev. 
+Finally, app is fully containerized with Docker but it appears to have a specific not permanently solved bug .
