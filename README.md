@@ -10,6 +10,7 @@ INSTRUCTIONS
 4. Frontend + Backend: http://localhost:5000
 
 Root folder:
+
 MONGO_URI=your_mongodb_uri,
 
 PORT=5000,
