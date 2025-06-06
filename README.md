@@ -2,7 +2,7 @@ A fully functional food App using the Mern Stack In home page we fetch foods wit
 
 INSTRUCTIONS 
 1. Clone the repo:
- git clone https://github.com/wearthewo/Full-Stack-Food-App.git
+ git clone https://github.com/wearthewo/Full-Stack-Food-App.git and
  cd Full-Stack-Food-App
 2. copy .env.example in root folder with your keys and copy .env.example in frontend folder with your keys as they are in the project structure.
 3. Run this command docker-compose up --build in root folder.
