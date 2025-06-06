@@ -268,7 +268,7 @@ const CartPage = () => {
 
       const { data } = await api.post("/payment", { items });
 
-      console.log("Stripe session ID:", data.id); // ✅ Debug log
+      console.log("Stripe session ID:", data.id);
 
       const result = await stripe.redirectToCheckout({ sessionId: data.id });
 

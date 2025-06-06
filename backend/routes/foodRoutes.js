@@ -14,12 +14,6 @@ import upload from "../middleware/multer.js";
 
 const router = express.Router();
 
-router.post("/", authenticateUser, authorizeAdmin, createFood); // Create food item
-router.get("/", getAllFoods); // Get all food items
-router.get("/:id", getFoodById); // Get food item by ID
-router.put("/:id", authenticateUser, authorizeAdmin, updateFood); // Update food item by ID
-router.delete("/:id", authenticateUser, authorizeAdmin, deleteFood); // Delete food item by ID
-// Upload route
 router.post(
   "/upload",
   authenticateUser,
@@ -31,10 +25,15 @@ router.post(
     }
 
     res.status(200).json({
-      imageUrl: req.file.path, // The secure Cloudinary URL
-      publicId: req.file.filename, // Cloudinary public ID (needed if you want to delete it later)
+      imageUrl: req.file.path,
+      publicId: req.file.filename,
     });
   }
 );
 
+router.post("/", authenticateUser, authorizeAdmin, createFood); // Create food item
+router.get("/", getAllFoods); // Get all food items
+router.get("/:id", getFoodById); // Get food item by ID
+router.put("/:id", authenticateUser, authorizeAdmin, updateFood); // Update food item by ID
+router.delete("/:id", authenticateUser, authorizeAdmin, deleteFood); // Delete food item by ID
 export default router;
